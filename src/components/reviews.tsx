@@ -18,6 +18,7 @@ export default function Reviews() {
         aria-hidden
         className="absolute select-none hidden xl:block -left-32 top-1/3"
       />
+
       <ReviewGrid />
     </MaxWidthWrapper>
   );
@@ -87,6 +88,8 @@ function ReviewGrid() {
           />
         </>
       )}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-slate-100" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-100" />
     </div>
   );
 }
@@ -150,7 +153,7 @@ function Review(props: ReviewProps) {
         className
       )}
       style={{ animationDelay }}
-      {...restProps}
+      {...props}
     >
       <Phone imgSrc={imgSrc} />
     </div>
