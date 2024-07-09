@@ -1,7 +1,7 @@
 import { LucideProps } from "lucide-react";
 
 export const Icons = {
-  underline: (props: LucideProps) => (
+  underline: (props?: LucideProps) => (
     <svg {...props} viewBox="0 0 687 155">
       <g
         stroke="currentColor"
@@ -19,7 +19,7 @@ export const Icons = {
       </g>
     </svg>
   ),
-  separator: (props: LucideProps) => (
+  separator: (props?: LucideProps) => (
     <svg
       {...props}
       className="h-full w-full text-gray-300"
