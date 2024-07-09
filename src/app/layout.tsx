@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { Toaster } from "@/components/ui/toaster";
 import { Recursive } from "next/font/google";
 import type { Metadata } from "next/types";
 import "./globals.css";
@@ -26,6 +27,8 @@ export default function RootLayout({
         </main>
 
         <Footer />
+
+        <Toaster />
       </body>
     </html>
   );
